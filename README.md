@@ -6,7 +6,7 @@
 - [Getting Started](#getting-started)
 
 ## Introduction
-End-to-end data engineering pipeline project utilizing Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, and Cassandra. Everything is containerized using Docker.
+An nd-to-end data engineering pipeline project utilizing Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, and Cassandra. Everything is containerized using Docker.
 
 
 ## System Architecture
@@ -20,3 +20,33 @@ The project is designed with the following components:
 - **Control Center and Schema Registry**: Helps in monitoring and schema management of our Kafka streams.
 - **Apache Spark**: For data processing with its master and worker nodes.
 - **Cassandra**: Where the processed data will be stored.
+
+## Technologies
+
+- Apache Airflow
+- Python
+- Apache Kafka
+- Apache Zookeeper
+- Apache Spark
+- Cassandra
+- PostgreSQL
+- Docker
+
+## Getting Started
+
+1. Create folder data-engineer:
+    ```bash
+    mkdir data-engineer
+    cd data-engineer
+    ```
+
+2. Create virtual environment:
+    ```bash
+    python -m venv venv
+    ```
+
+3. Create file dags and script:
+    ```bash
+    mkdir dags
+    mkdir script
+    ```
