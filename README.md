@@ -62,4 +62,4 @@ The project is designed with the following components:
     ```
     ![Run Docker](https://github.com/NQP27/data-engineer-project/blob/main/images/docker-compose-up.png)
 10. Wait a few minutes theen go to http://localhost:8080/ (Airlow UI) to run dags
-      ![Airflow UI]([https://github.com/NQP27/data-engineer-project/blob/main/images/airflow-ui.png.https://github.com/NQP27/data-engineer-project/blob/main/images/airflow-run.png])
+      ![Airflow UI]([https://github.com/NQP27/data-engineer-project/blob/main/images/airflow-ui.png,https://github.com/NQP27/data-engineer-project/blob/main/images/airflow-run.png])
