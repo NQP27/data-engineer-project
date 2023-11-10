@@ -58,7 +58,7 @@ The project is designed with the following components:
 8. Create docker-compose.yml in root folder, docker-compose.yml is a tool for managing and deploying containers in a Docker environment.
 9. We need 2 java files: spark-sql-kafka-0-10_2.12:3.5.0,jar, spark-cassandra-connector_2.13:3.4.1.jar to run spark_stream.py. I downloaded them from https://mvnrepository.com and located them in E:\worksapce\data-engineer\venv\Lib\site-packages\pyspark\jars
 10. In root folder, use this command to run docker environment
-     ```bash
+    ```bash
     docker-compose up -d
     ```
     ![Run Docker](https://github.com/NQP27/data-engineer-project/blob/main/images/docker-compose-up.png)
@@ -68,19 +68,21 @@ The project is designed with the following components:
 12. Go to http://localhost:9021/ (Kafka Control Center), we can see data streamed from API via airflow
       ![DKafka Control Center](https://github.com/NQP27/data-engineer-project/blob/main/images/control-center.png)
 13. Back to the terminal, run this command to load data from kafka to cassandra:
-     ```bash
+   ```bash
    spark-submit --master spark://localhost:7077 --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,com.datastax.spark:spark-cassandra-connector_2.13:3.4.1 spark_stream.py
-    ```
-    Spark is running and you can see it in http://localhost:9090/
-    
+   ```
+13. Spark is running and you can see it in http://localhost:9090/    
 14. Check the data in cassandra: 
     - Run this command to access cassandra:
-   ```bash
-   docker exec -it cassandra cqlsh -u cassandra -p cassandra localhost 9042
+    ```bash
+       docker exec -it cassandra cqlsh -u cassandra -p cassandra localhost 9042
+    ```
+    - To querry the data:
+    ```bash
+       select * from spark_streams.created_users;
     ```
 
-    - Querry the data:
-        ```bash
-        select * from spark_streams.created_users;
-          ```
+                                                
+
+
     
