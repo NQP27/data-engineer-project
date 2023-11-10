@@ -56,8 +56,10 @@ The project is designed with the following components:
 6. Create requirements.txt in requirements folder, this file contain necessary dependencies while using docker. 
 7. Create entrypoint.sh in script folder, used to install dependencies on requirements.txt and initialize sirflow application as a web server.
 8. Create docker-compose.yml in root folder, docker-compose.yml is a tool for managing and deploying containers in a Docker environment.
-9. In root folder:
+9. In root folder, use this command to run docker environment
      ```bash
     docker-compose up -d
     ```
     ![Run Docker](https://github.com/NQP27/data-engineer-project/blob/main/images/docker-compose-up.png)
+10. Wait a few minutes theen go to http://localhost:8080/ (Airlow UI) to run dags
+      ![Airflow UI](https://github.com/NQP27/data-engineer-project/blob/main/images/airflow-ui.png)
