@@ -9,7 +9,7 @@ An nd-to-end data engineering pipeline project utilizing Apache Airflow, Python,
 
 
 ## System Architecture
-![System Architecture](https://github.com/NQP27/data-engineer-project/blob/main/system_architecture.png)
+![System Architecture](https://github.com/NQP27/data-engineer-project/blob/main/images/system_architecture.png)
 
 The project is designed with the following components:
 
@@ -60,4 +60,4 @@ The project is designed with the following components:
      ```bash
     docker-compose up -d
     ```
-    
+    ![Run Docker](https://github.com/NQP27/data-engineer-project/blob/main/images/docker-compose-up.png)
