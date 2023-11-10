@@ -61,5 +61,10 @@ The project is designed with the following components:
     docker-compose up -d
     ```
     ![Run Docker](https://github.com/NQP27/data-engineer-project/blob/main/images/docker-compose-up.png)
-10. Wait a few minutes theen go to http://localhost:8080/ (Airlow UI) to run dags
+10. Wait a few minutes then go to http://localhost:8080/ (Airlow UI) to run dags
       ![Airflow UI](https://github.com/NQP27/data-engineer-project/blob/main/images/airflow-ui.png)
+      ![Airflow run Dags](https://github.com/NQP27/data-engineer-project/blob/main/images/airflow-run.png)
+11. Go to http://localhost:9021/ (Kafka Control Center), we can see data streamed from API via airflow
+      ![DKafka Control Center](https://github.com/NQP27/data-engineer-project/blob/main/images/control-center.png)
+        
+    
