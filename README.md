@@ -5,7 +5,7 @@
 - [Getting Started](#getting-started)
 
 ## Introduction
-An nd-to-end data engineering pipeline project utilizing Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, and Cassandra. Everything is containerized using Docker.
+An end-to-end data engineering pipeline project utilizing Apache Airflow, Python, Apache Kafka, Apache Zookeeper, Apache Spark, and Cassandra. Everything is containerized using Docker.
 
 
 ## System Architecture
